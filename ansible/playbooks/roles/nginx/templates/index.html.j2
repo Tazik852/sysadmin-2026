@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Node {{ inventory_hostname }}</title>
+</head>
+<body>
+    <h1>Node: {{ inventory_hostname }}</h1>
+    <p>Дата и время деплоя: {{ ansible_date_time.date }} {{ ansible_date_time.time }}</p>
+    <p>Студент: {{ student_name }}</p>
+</body>
+</html>

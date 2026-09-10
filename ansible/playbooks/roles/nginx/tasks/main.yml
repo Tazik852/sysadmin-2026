@@ -1,0 +1,14 @@
+- name: Check if index.html exists
+  stat:
+    path: /var/www/html/index.html
+  register: index_file
+
+- name: Deploy custom index.html
+  template:
+    src: index.html.j2
+    dest: /var/www/html/index.html
+    owner: www-data
+    group: www-data
+    mode: '0644'
+  when: not index_file.stat.exists
+  notify: Restart nginx
