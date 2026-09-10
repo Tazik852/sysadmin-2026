@@ -37,4 +37,4 @@
 
 ### Ссылка на коммит с финальной версией кода
 
-https://github.com/Tazik852/sysadmin-2026/commit/XXXXXXX
+https://github.com/Tazik852/sysadmin-2026/commit/a5c151a
